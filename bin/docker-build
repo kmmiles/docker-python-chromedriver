@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# shellcheck source=/dev/null
+source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"/profile.sh
+
+docker build -t "${docker_tag_name:-}" "${root_dir:-}"

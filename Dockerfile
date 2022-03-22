@@ -31,11 +31,6 @@ RUN set -ex; \
 
 # cleanup
 RUN set -ex; \
-  apt-get remove -y \
-    curl \
-    wget \
-    unzip \
-    && \
   apt-get clean && \
   dpkg --clear-avail && \
   rm -rf /var/tmp/* && \
